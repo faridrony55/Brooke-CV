@@ -368,6 +368,34 @@ form input[type="submit"] {
   margin-top: 20px;
 }
 
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--theme-color);
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  opacity: 0;
+  transform: scale(0.4);
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 40px -10px #333;
+  transition-duration: 0.4s;
+}
+.scrollTop.fade {
+  opacity: 1;
+  transform: scale(1);
+}
+.scrollTop span {
+  display: block;
+  border-left: 13px solid #00ffe700;
+  border-bottom: 20px solid var(--bg-color);
+  border-right: 13px solid #00ffe700;
+}
+
 @media (max-width: 2000px) {
   .banner-content h1 {
     font-size: 50px;
@@ -383,7 +411,7 @@ form input[type="submit"] {
   }
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1600px) {
   .container-right {
     width: calc(100% - 50px);
   }
