@@ -7,6 +7,12 @@ $(window).scroll(function() {
     } else {
         $('nav').removeClass("sticky");
     }
+
+    if(scroll > $('body').offset().top){
+        $(".scrollTop").addClass('fade');
+    } else { 
+        $(".scrollTop").removeClass('fade');
+    }
 });
 
 $(".navbar").click(function(){
