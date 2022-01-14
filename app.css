@@ -396,6 +396,19 @@ form input[type="submit"] {
   border-right: 13px solid #00ffe700;
 }
 
+.videoBox {
+  padding: 80px 0;
+}
+.video {
+  max-width: 1200px;
+  margin: auto;
+}
+.video iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #3333332e;
+}
+
 @media (max-width: 2000px) {
   .banner-content h1 {
     font-size: 50px;
@@ -458,13 +471,18 @@ form input[type="submit"] {
     flex-basis: 30%;
     max-width: 30%;
   }
+  .video iframe {
+    height: 550px;
+  }
 }
 @media (max-width: 900px) {
   .hero-banner .row {
     padding: 25px 0;
     flex-direction: column-reverse;
   }
-
+  .video iframe {
+    height: 450px;
+  }
   .container-right {
     width: calc(100% - 40px);
     margin: auto;
@@ -584,5 +602,10 @@ form input[type="submit"] {
     transform: scale(1);
     opacity: 1;
     visibility: visible;
+  }
+}
+@media (max-width: 575px) {
+  .video iframe {
+    height: 270px;
   }
 }
